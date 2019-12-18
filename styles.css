@@ -1,3 +1,68 @@
-.github {
-  background-image: url("https://github.com/fluidicon.png");
+body {
+  margin: 0;
+}
+main {
+  display: flex;
+  font-family: arial;
+}
+aside {
+  background: #06a9e0;
+  display: block;
+  width: 30%;
+}
+aside section hr {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 70%;
+}
+
+aside section h1, h2, h3, figure{
+  text-align: center;
+  font-weight: 500;
+}
+aside section h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+aside section h2 {
+  font-size: 1.2em;
+}
+aside section h3 {
+  font-size: 1.17em;
+}
+main aside section nav ul, *{
+  list-style-type: none;
+  color: white;
+}
+main aside section nav ul li {
+  padding: 0.5em 0em;
+}
+main aside section nav ul li *{
+  text-decoration: none;
+}
+main aside section nav ul li {
+  padding: 0.5em 0em;
+}
+main aside section nav ul li a{
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+main aside section nav ul li a.tel{
+  background: url(img/phone.svg) no-repeat;
+}
+main aside section nav ul li a.mail{
+  background: url(img/email.svg) no-repeat;
+}
+main aside section nav ul li a.location{
+  background: url(img/location.svg) no-repeat;
+}
+main aside section nav ul li a.linkedin {
+  background: url(img/linkedin.svg) no-repeat;
+}
+main aside section nav ul li a.github {
+  background: url(img/github.svg) no-repeat;
+}
+main aside section nav ul li a.instagram {
+  background: url(img/instagram.svg) no-repeat;
 }
