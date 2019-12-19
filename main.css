@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+* {
+  font-family: arial;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+article ul {
+  list-style-type: disc;
+  padding-inline-start: 40px;
+}
+h1,h2{
+  text-transform: uppercase;
+}
+aside {
+  background-color: #1FA6A6;
+  width: 30%;
+  margin-right: 3em;
+  max-width: 300px;
+}
+aside *{
+  color: white;
+}
+#profile{
+  text-align: center;
+}
+#profile img{
+  border-radius: 50%;
+  width: 100%;
+  max-width: 200px;
+}
+#profile figcaption {
+  font-size: 1.5em;
+}
+aside h2{
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+aside section h2:first-child{
+  border-bottom: 2px solid white; 
+}
+aside section ul {
+  padding-left: 20px;
+}
+aside section ul li *{
+  padding-left: 30px;
+  padding-bottom: 10px;
+  display: block;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+.tel{
+  background: url(img/phone.svg) no-repeat;
+  background-size: 24px;
+}
+.mail{
+  background: url(img/email.svg) no-repeat;
+  background-size: 24px;
+}
+.location{
+  background: url(img/location.svg) no-repeat;
+  background-size: 25px;
+}
+.linkedin {
+  background: url(img/linkedin.svg) no-repeat;
+}
+.github {
+  background: url(img/github.svg) no-repeat;
+  background-size: 24px;
+}
+.instagram {
+  background: url(img/instagram.svg) no-repeat;
+  background-size: 20px;
+}
+main section h2 {
+  letter-spacing: 0.1em;
+}
+.row {
+  display: flex;
+}
+.row article {
+  display: block;
+  margin-right: 3em;
+}
