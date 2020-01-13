@@ -1,9 +1,16 @@
 body {
-  margin: 0;
+  margin: 5em;
 }
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
 .main-container {
   display: flex;
   flex-wrap: wrap;
+  align-self: flex-end;
+  max-width: 50%;
 }
 * {
   font-family: arial;
@@ -78,6 +85,9 @@ aside section ul li *{
 .instagram {
   background: url(img/instagram.svg) no-repeat;
   background-size: 20px;
+}
+main {
+  background-color: white;
 }
 main section h2 {
   letter-spacing: 0.1em;
