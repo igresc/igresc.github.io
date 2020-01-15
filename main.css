@@ -1,5 +1,16 @@
+* {
+  font-family: arial;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+h1,h2{
+  text-transform: uppercase;
+}
+
 body {
-  margin-top: 5em;
+  margin: 5em 0;
   background-color: black;
 }
 .main-container {
@@ -9,32 +20,19 @@ body {
   justify-content: center;
   flex-direction: row;
 }
-* {
-  font-family: arial;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-article ul {
-  list-style-type: disc;
-  padding-inline-start: 40px;
-}
-h1,h2{
-  text-transform: uppercase;
-}
 aside {
-  background-color: cornflowerblue;
-  width: 35%;
-  max-width: 20em;
-  min-width: 20em;
+  background-color: #6495ed;
+  width: 20em;
   height: 100%;
+  padding-top: 1em;
 }
 aside *{
   color: white;
 }
 #profile{
   text-align: center;
+  width: 100%;
+  margin: 0;
 }
 #profile img{
   border-radius: 50%;
@@ -56,19 +54,18 @@ aside section:first-child p{
 }
 aside section:nth-child(n+1) h2:first-child{
   padding-left: 1em;
+  font-size: 1.2em;
 }
 aside section h2:first-child{
   border-bottom: 2px solid white;
 }
-aside section ul {
-  padding-left: 0em;
-}
-aside section ul li *{
+aside section ul li a{
   padding-left: 2em;
   padding-bottom: 1em;
   display: block;
   text-decoration: none;
   overflow-wrap: break-word;
+  width: fit-content;
 }
 .tel{
   background: url(img/phone.svg) no-repeat;
@@ -84,7 +81,6 @@ aside section ul li *{
 }
 .linkedin {
   background: url(img/linkedin.svg) no-repeat;
-  fill:white;
 }
 .github {
   background: url(img/github.svg) no-repeat;
@@ -94,16 +90,32 @@ aside section ul li *{
   background: url(img/instagram.svg) no-repeat;
   background-size: 20px;
 }
+
 main {
   background-color: white;
   padding-left: 2em;
 }
 main section h2 {
   letter-spacing: 0.1em;
-  color: cornflowerblue;
+  color: #6495ed;
+  padding-left: 1.2em;
+  font-size: 1em;
 }
 main section ul li h4 {
   display: inline;
+}
+main article ul {
+  list-style-type: disc;
+  padding-inline-start: 3em;
+}
+.main-icon h2{
+  background-size: 1em !important;
+}
+.jobs h2 {
+  background: url(img/work.svg) no-repeat;
+}
+.education h2{
+  background: url(img/school.svg) no-repeat;
 }
 .row {
   display: flex;
@@ -112,12 +124,12 @@ main section ul li h4 {
   display: block;
   margin-right: 3em;
 }
-.row article:last-child h2{
-  padding-left: 1em;
+.row h2 {
+  background-position-y: 0.1em !important;
 }
-.knowledge {
-  background: url(img/code-24px.svg) no-repeat;
-  background-size: 20px;
-  background-position-y: 0.12em;
-  display: block;
+.skills h2{
+  background: url(img/cogs-solid.svg) no-repeat;
+}
+.knowledge h2{
+  background: url(img/bulb.svg) no-repeat;
 }
