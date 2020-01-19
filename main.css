@@ -10,20 +10,21 @@ h1,h2{
 }
 
 body {
-  margin: 5em 0;
+  margin: 2% 0;
   background-color: black;
+  justify-content: center;
+  display: flex;
 }
 .main-container {
   display: flex;
-  flex-wrap: wrap;
-  align-self: flex-end;
   justify-content: center;
-  flex-direction: row;
+  width: 75%;
 }
 aside {
   background-color: #6495ed;
-  width: 20em;
-  height: 100%;
+  width: 25%;
+  min-width: min-content;
+  max-width: max-content;
   padding-top: 1em;
 }
 aside *{
@@ -31,12 +32,10 @@ aside *{
 }
 #profile{
   text-align: center;
-  width: 100%;
   margin: 0;
 }
 #profile img{
   border-radius: 50%;
-  width: 100%;
   max-width: 200px;
 }
 #profile h1 {
@@ -51,6 +50,7 @@ aside section {
 }
 aside section:first-child p{
   margin: 0em;
+  width: fit-content;
 }
 aside section:nth-child(n+1) h2:first-child{
   padding-left: 1em;
@@ -93,20 +93,43 @@ aside section ul li a{
 
 main {
   background-color: white;
-  padding-left: 2em;
+  padding: 1em 2em;
 }
 main section h2 {
   letter-spacing: 0.1em;
   color: #6495ed;
   padding-left: 1.2em;
+  font-size: 1.15em;
+}
+main section ul {
+  padding-left: 1.4em;
+}
+main section ul li{
+  display: flex;
+  margin-bottom: 2em;
+}
+main section ul li article{
+  flex-grow: 3;
+  width: 0;
+}
+main section ul li article:first-child{
+  margin-right: 2em;
+  flex-grow: 1;
+  width: 0;
+}
+main section ul li article h3{
   font-size: 1em;
 }
-main section ul li h4 {
-  display: inline;
+main section ul li article h4{
+  font-style: italic;
+  font-size: 0.83em;
 }
-main article ul {
-  list-style-type: disc;
-  padding-inline-start: 3em;
+main section ul li article h5{
+  font-weight: normal;
+  font-style: italic;
+}
+main section ul li * {
+  margin: 0;
 }
 .main-icon h2{
   background-size: 1em !important;
@@ -117,19 +140,96 @@ main article ul {
 .education h2{
   background: url(img/school.svg) no-repeat;
 }
+
 .row {
   display: flex;
 }
-.row article {
-  display: block;
+.row article:first-child {
   margin-right: 3em;
 }
 .row h2 {
   background-position-y: 0.1em !important;
+}
+.row ul{
+  list-style-type: disc;
+}
+.row li{
+  margin-bottom: 0.7em;
+  display: list-item;
 }
 .skills h2{
   background: url(img/cogs-solid.svg) no-repeat;
 }
 .knowledge h2{
   background: url(img/bulb.svg) no-repeat;
+  margin-bottom: 0;
+}
+.knowledge div{
+  display: flex;
+}
+
+ul.dot {
+  display: block;
+  padding: 0;
+  list-style-type: none;
+  padding-inline-start: 0;
+  width: 96px;
+}
+ul.dot li{
+  margin-left: 1em;
+  margin-top: 5px;
+  margin-bottom: 1.35em;
+  height: 8px;
+  width: 8px;
+}
+
+.dot-1 {
+  border-radius: 50%;
+  color: #6495ed;
+  background-color: currentColor;
+  box-shadow: 
+    16px 0px 0 0 darkgray,
+    32px 0px 0 0 darkgray,
+    48px 0px 0 0 darkgray,
+    64px 0px 0 0 darkgray;
+}
+.dot-2 {
+  border-radius: 50%;
+  color: #6495ed;
+  background-color: currentColor;
+  box-shadow: 
+    16px 0px 0 0 currentColor,
+    32px 0px 0 0 darkgray,
+    48px 0px 0 0 darkgray,
+    64px 0px 0 0 darkgray;
+}
+.dot-3 {
+  border-radius: 50%;
+  color: #6495ed;
+  background-color: currentColor;
+  box-shadow: 
+    16px 0px 0 0 currentColor,
+    32px 0px 0 0 currentColor,
+    48px 0px 0 0 darkgray,
+    64px 0px 0 0 darkgray;
+}
+.dot-4 {
+  border-radius: 50%;
+  color: #6495ed;
+  background-color: currentColor;
+  box-shadow: 
+    16px 0px 0 0 currentColor,
+    32px 0px 0 0 currentColor,
+    48px 0px 0 0 currentColor,
+    64px 0px 0 0 darkgray;
+}
+.dot-5 {
+  border-radius: 50%;
+  color: #6495ed;
+  background-color: currentColor;
+  box-shadow: 
+    16px 0px 0 0 currentColor,
+    32px 0px 0 0 currentColor,
+    48px 0px 0 0 currentColor,
+    64px 0px 0 0 currentColor;
 }
