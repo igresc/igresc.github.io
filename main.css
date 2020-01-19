@@ -144,18 +144,14 @@ main section ul li * {
 .row {
   display: flex;
 }
-.row article:first-child {
+.row section:first-child {
   margin-right: 3em;
+}
+.row article {
+  width: max-content;
 }
 .row h2 {
   background-position-y: 0.1em !important;
-}
-.row ul{
-  list-style-type: disc;
-}
-.row li{
-  margin-bottom: 0.7em;
-  display: list-item;
 }
 .skills h2{
   background: url(img/cogs-solid.svg) no-repeat;
@@ -167,6 +163,19 @@ main section ul li * {
 .knowledge div{
   display: flex;
 }
+.language h2{
+  background: url(img/language.svg) no-repeat;
+  margin-bottom: 0;
+  background-position-y: 0.05em !important;
+}
+.list ul{
+  list-style-type: disc;
+  padding-inline-start: 3em;
+}
+.list li{
+  margin-bottom: 0.7em;
+  display: list-item;
+}
 
 ul.dot {
   display: block;
@@ -176,6 +185,7 @@ ul.dot {
   width: 96px;
 }
 ul.dot li{
+  padding: 0;
   margin-left: 1em;
   margin-top: 5px;
   margin-bottom: 1.35em;
